@@ -9,7 +9,7 @@ export class AdapterLength extends MetricLength {
     super(Number((imperialLength.getFeet() / 3.281).toFixed(3)));
   }
 
-  /**
+  /** 
    * Método que convertirá pulgadas a centimetros.
    * @returns {number} El valor en centimetros
    */

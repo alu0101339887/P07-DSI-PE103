@@ -7,7 +7,7 @@ import { MetricMass } from './MetricMass';
 export class AdapterMass extends MetricMass {
   constructor(private imperialMass: ImperialMass) {
     super(Number((imperialMass.getOunces() * 28.3495).toFixed(3)));
-  }
+  } 
 
   /**
    * Método que convertirá onzas a gramos.
