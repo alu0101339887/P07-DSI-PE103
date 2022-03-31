@@ -20,7 +20,7 @@ describe('AdapterMass', () => {
     expect(metricMass.getKilograms).to.exist;
     expect(metricMass.getKilograms).to.be.a('function');
     expect(metricMass.getKilograms()).to.be.equal(4.535);
-  });
+  }); 
   it('Existe un método getTonnes()', () => {
     expect(metricMass.getTonnes).to.exist;
     expect(metricMass.getTonnes).to.be.a('function');
