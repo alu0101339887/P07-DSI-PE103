@@ -19,11 +19,11 @@ describe('AdapterMass', () => {
   it('Existe un método getKilograms()', () => {
     expect(metricMass.getKilograms).to.exist;
     expect(metricMass.getKilograms).to.be.a('function');
-    expect(metricMass.getKilograms()).to.be.equal(4.536);
+    expect(metricMass.getKilograms()).to.be.equal(4.535);
   });
   it('Existe un método getTonnes()', () => {
     expect(metricMass.getTonnes).to.exist;
     expect(metricMass.getTonnes).to.be.a('function');
-    expect(metricMass.getTonnes()).to.be.equal(4.534);
+    expect(metricMass.getTonnes()).to.be.equal(0.005);
   });
 });

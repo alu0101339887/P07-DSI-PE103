@@ -24,6 +24,6 @@ describe('AdapterLength', () => {
   it('Existe un método getKilometers()', () => {
     expect(metricLength.getKilometers).to.exist;
     expect(metricLength.getKilometers).to.be.a('function');
-    expect(metricLength.getKilometers()).to.be.equal(3.048);
+    expect(metricLength.getKilometers()).to.be.equal(0.003);
   });
 });

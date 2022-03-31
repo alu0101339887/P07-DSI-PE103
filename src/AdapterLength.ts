@@ -19,7 +19,7 @@ export class AdapterLength {
    * @returns {number} El valor en metros
    */
   public getMeters(): number {
-    return Number((this.imperialLength.getFeet() * 0.3048).toFixed(3));
+    return Number((this.imperialLength.getFeet() / 3.281).toFixed(3));
   }
 
   /**
@@ -27,7 +27,7 @@ export class AdapterLength {
    * @returns {number} El valor en kilómetros
    */
   public getKilometers(): number {
-    return Number((this.imperialLength.getYards() * 0.9144).toFixed(3));
+    return Number((this.imperialLength.getYards() / 1094).toFixed(3));
   }
 }
 

@@ -19,7 +19,7 @@ export class AdapterMass {
    * @returns {number} Valor en kilogramos
    */
   public getKilograms(): number {
-    return Number((this.imperialMass.getPounds() * 0.453592).toFixed(3));
+    return Number((this.imperialMass.getPounds() / 2.205).toFixed(3));
   }
 
   /**
@@ -27,6 +27,6 @@ export class AdapterMass {
    * @returns {number} Valor en toneladas
    */
   public getTonnes(): number {
-    return Number((this.imperialMass.getStones() * 6.35029).toFixed(3));
+    return Number((this.imperialMass.getStones() / 157).toFixed(3));
   }
 }
