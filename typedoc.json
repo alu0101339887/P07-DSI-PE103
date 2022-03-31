@@ -3,7 +3,9 @@
     "./src/ImperialLength.ts",
     "./src/ImperialMass.ts",
     "./src/MetricLength.ts",
-    "./src/MetricMass.ts"
+    "./src/MetricMass.ts", 
+    "./src/AdapterMass.ts",
+    "./src/AdapterLength.ts"
   ],
   "out": "./docs"
 }
