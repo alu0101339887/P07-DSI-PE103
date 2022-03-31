@@ -1,10 +1,13 @@
 import { ImperialMass } from './ImperialMass';
+import { MetricMass } from './MetricMass';
 
 /**
  * AdapterMass es una clase que adapta el sistema imperial a metrico.
  */
-export class AdapterMass {
-  constructor(private imperialMass: ImperialMass) {}
+export class AdapterMass extends MetricMass {
+  constructor(private num: number, private imperialMass: ImperialMass) {
+    super(num);
+  }
 
   /**
    * Método que convertirá onzas a gramos.

@@ -1,10 +1,13 @@
 import { ImperialLength } from './ImperialLength';
+import { MetricLength } from './MetricLength';
 
 /**
  * AdapterLength es una clase que adapta el sistema imperial a metrico.
  */
-export class AdapterLength {
-  constructor(private imperialLength: ImperialLength) {}
+export class AdapterLength extends MetricLength {
+  constructor(private num: number, private imperialLength: ImperialLength) {
+    super(num);
+  }
 
   /**
    * Método que convertirá pulgadas a centimetros.

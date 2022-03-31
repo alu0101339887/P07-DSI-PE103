@@ -9,7 +9,7 @@ describe('AdapterMass', () => {
   let imperialMass: ImperialMass;
   beforeEach(() => {
     imperialMass = new ImperialMass(10);
-    metricMass = new AdapterMass(imperialMass);
+    metricMass = new AdapterMass(10, imperialMass);
   });
   it('Existe un método getGrams()', () => {
     expect(metricMass.getGrams).to.exist;
