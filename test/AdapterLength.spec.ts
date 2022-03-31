@@ -9,7 +9,7 @@ describe('AdapterLength', () => {
   let imperialLength: ImperialLength;
   beforeEach(() => {
     imperialLength = new ImperialLength(10);
-    metricLength = new AdapterLength(10, imperialLength);
+    metricLength = new AdapterLength(imperialLength);
   });
   it('Existe un método getCentimeters()', () => {
     expect(metricLength.getCentimeters).to.exist;

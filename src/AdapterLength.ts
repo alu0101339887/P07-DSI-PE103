@@ -5,8 +5,8 @@ import { MetricLength } from './MetricLength';
  * AdapterLength es una clase que adapta el sistema imperial a metrico.
  */
 export class AdapterLength extends MetricLength {
-  constructor(private num: number, private imperialLength: ImperialLength) {
-    super(num);
+  constructor(private imperialLength: ImperialLength) {
+    super(Number((imperialLength.getFeet() / 3.281).toFixed(3)));
   }
 
   /**

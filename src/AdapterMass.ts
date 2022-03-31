@@ -5,8 +5,8 @@ import { MetricMass } from './MetricMass';
  * AdapterMass es una clase que adapta el sistema imperial a metrico.
  */
 export class AdapterMass extends MetricMass {
-  constructor(private num: number, private imperialMass: ImperialMass) {
-    super(num);
+  constructor(private imperialMass: ImperialMass) {
+    super(Number((imperialMass.getOunces() * 28.3495).toFixed(3)));
   }
 
   /**
