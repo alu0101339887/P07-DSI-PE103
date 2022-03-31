@@ -1,6 +1,9 @@
 {
   "entryPoints": [
-    "src"
+    "./src/ImperialLength.ts",
+    "./src/ImperialMass.ts",
+    "./src/MetricLength.ts",
+    "./src/MetricMass.ts"
   ],
   "out": "./docs"
 }
